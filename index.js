@@ -1,7 +1,7 @@
 let scoreHomeEl = document.getElementById("score-home")
-let scoreAwayEl = document.getElementById("score-away")
+let scoreGuestEl = document.getElementById("score-guest")
 let scoreHome = 0
-let scoreAway = 0
+let scoreGuest = 0
 function homeAdd1() {
 scoreHome += 1
 scoreHomeEl.textContent = scoreHome
@@ -20,24 +20,24 @@ scoreHomeEl.textContent = scoreHome
 
 }
 
-function awayAdd1() {
-    scoreAway += 1 
-    scoreAwayEl.textContent = scoreAway
+function guestAdd1() {
+    scoreGuest += 1 
+    scoreGuestEl.textContent = scoreGuest
 }
 
-function awayAdd2() {
-    scoreAway += 2 
-    scoreAwayEl.textContent = scoreAway
+function guestAdd2() {
+    scoreGuest += 2 
+    scoreGuestEl.textContent = scoreGuest
 }
 
-function awayAdd3() {
-    scoreAway += 3
-    scoreAwayEl.textContent = scoreAway
+function guestAdd3() {
+    scoreGuest += 3
+    scoreGuestEl.textContent = scoreGuest
 }
 
 function resetScore() {
     scoreHome = 0
-    scoreAway = 0
+    scoreGuest = 0
     scoreHomeEl.textContent = 0
-    scoreAwayEl.textContent = 0    
+    scoreGuestEl.textContent = 0    
 }
