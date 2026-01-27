@@ -2,42 +2,41 @@ let scoreHomeEl = document.getElementById("score-home")
 let scoreGuestEl = document.getElementById("score-guest")
 let scoreHome = 0
 let scoreGuest = 0
-function homeAdd1() {
-scoreHome += 1
-scoreHomeEl.textContent = scoreHome
 
+// Attach functions to window so inline onclick can see them
+window.homeAdd1 = function() {
+    scoreHome += 1
+    scoreHomeEl.textContent = scoreHome
 }
 
-function homeAdd2() {
-scoreHome += 2
-scoreHomeEl.textContent = scoreHome
-
+window.homeAdd2 = function() {
+    scoreHome += 2
+    scoreHomeEl.textContent = scoreHome
 }
 
-function homeAdd3() {
-scoreHome += 3
-scoreHomeEl.textContent = scoreHome
-
+window.homeAdd3 = function() {
+    scoreHome += 3
+    scoreHomeEl.textContent = scoreHome
 }
 
-function guestAdd1() {
-    scoreGuest += 1 
+window.guestAdd1 = function() {
+    scoreGuest += 1
     scoreGuestEl.textContent = scoreGuest
 }
 
-function guestAdd2() {
-    scoreGuest += 2 
+window.guestAdd2 = function() {
+    scoreGuest += 2
     scoreGuestEl.textContent = scoreGuest
 }
 
-function guestAdd3() {
+window.guestAdd3 = function() {
     scoreGuest += 3
     scoreGuestEl.textContent = scoreGuest
 }
 
-function resetScore() {
+window.resetScore = function() {
     scoreHome = 0
     scoreGuest = 0
     scoreHomeEl.textContent = 0
-    scoreGuestEl.textContent = 0    
+    scoreGuestEl.textContent = 0
 }
