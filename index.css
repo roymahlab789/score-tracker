@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    background: #1B244A;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    text-align: center;
+    
+     
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+button {
+    background: #1B244A;
+    border: 1px solid #9AABD8;
+    border-radius: 5px;
+    color: #9AABD8;
+    padding: 10px;
+    
+}
+h4{
+    background: black;
+    font-size: 90px;
+    color: #F94F6D;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+h2 {
+    font-size: 50px;
+    margin: 10px
+}
+button:hover {
+    background: #9AABD8;
+    color: #1B244A;
+}
